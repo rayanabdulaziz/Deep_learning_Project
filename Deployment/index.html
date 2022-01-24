@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="/static/czz.css">
+</head>
+<title>Alzheimer</title>
+
+<body>
+ <!-- header -->
+<header>
+<h1>
+    Alzheimer</h1>
+<ul>
+    <li><a href="#">home</a></li>
+    <li> <a href="#">aِbout </a> </li>
+    <li> <a href="#"> service</a> </li>
+    <li> <a href="#">cntact us</a></li>
+</ul>
+</header>
+ <!-- header -->
+
+ 
+<!-- Articke -->
+
+<div class="top">
+    <img src= "/img/Alzheimers740.jpg" alt="Alzheimer" /> </div>
+
+
+
+<div class="artickel">
+    <ul>
+    <li>
+        <div class="title">
+            <h2>
+                What is Alzheimer’s Disease?
+            </h2>
+            <p>
+        </div>
+    
+    <div class="content">
+        <p>
+            <h4>Alzheimer's is a type of dementia that affects memory, thinking and behavior. Symptoms eventually grow severe enough to interfere with daily tasks 
+                Alzheimer's is not the only cause of memory loss !
+                Many people have trouble with memory — this does NOT mean they have Alzheimer's. There are many different causes of memory loss.
+                 If you or someone you know is experiencing symptoms of dementia, 
+                it is best to visit a doctor so the cause can be determined.           
+                    </h4>        </p>     
+    </div>
+    
+    </li>
+    <li>
+        <div class="title">
+            <h2>
+                A diagnosis based on  MRI images, and classify four class 
+            </h2>
+           
+        </div>
+    
+    <div class="content">
+        <p>
+            <p>1-Mild Demented</p> 
+         
+          <p>2- Moderate Demented</p>  
+             
+            <p>3-Very Mild Demented
+            </p>
+            <p>4-Non Demented</p>
+                     </p>   
+    </div>
+    
+    </li>
+    <li>
+        <div class="title">
+            <h2>
+                Let's check your x ray            </h2>
+            <p>
+            </p>
+        </div>
+    
+    <div class="content">
+        <p>
+            <form action="" method='post' enctype='multipart/form-data'>
+                <input type="file" name="file" id="">
+                <button class="btnmain"><h3 style="color:red;">Let's check </h3></button>
+                    <br/>
+                <br/>
+                {% if results[0] == None: %}
+                <p><i>Results will be displayed here</i></p>
+                {% else %}
+                <h2>Results</h2>
+                <b>Predicted as: ( {{results[0]}} ) -> ( {{results[1]}} )</b>
+                {% endif %}
+            </form>
+        </p>     
+    </div>
+
+    </li>
+    </ul>
+    </div>
+
+
+                                           
+                        
+
+
+                               
+     <footer>copyright &reg;2022</footer>
+</body>
+</html>
